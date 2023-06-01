@@ -8,7 +8,7 @@
         let start = document.getElementById("Start");
         async function BLEManager() {
             const device = await navigator.bluetooth.requestDevice({
-                acceptAllDevices:true
+                filters: [{name: 'HC-08'}]
             });
 
         }
