@@ -8,7 +8,9 @@
     <script>
         let start = document.getElementById("Start");
         async function BLEManager() {
-            const device = await navigator.bluetooth.requestDevice();
+            const device = await navigator.bluetooth.requestDevice({
+                acceptAllDevices:true
+            });
 
         }
         let startCar = function (){
